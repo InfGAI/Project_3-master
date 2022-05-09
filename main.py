@@ -18,7 +18,7 @@ api = Api(app)
 app.config['SECRET_KEY'] = '727 WYSI'
 login_manager = LoginManager()
 login_manager.init_app(app)
-#webhook for GIThub
+#webhook for GIThub test
 @app.route('/update', methods=['POST'])
 def webhook():
     if request.method == 'POST':
