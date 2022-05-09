@@ -19,7 +19,7 @@ app.config['SECRET_KEY'] = '727 WYSI'
 login_manager = LoginManager()
 login_manager.init_app(app)
 #webhook for GIThub c [f,hf
-@app.route('/updat', methods=['POST'])
+@app.route('/update', methods=['POST'])
 def webhook():
     if request.method == 'POST':
         repo = git.Repo('https://github.com/InfGAI/Project_3-master.git')
